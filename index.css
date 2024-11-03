@@ -1,0 +1,393 @@
+body{
+    background-color: rgb(7, 7, 83);
+}
+.container{
+    background-color: rgb(7, 7, 83);
+}
+
+/* Navbar */
+
+.logo{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.nav-item a{
+    font-size: larger;
+    color: white;
+}
+
+.nav-item a:hover{
+
+    color: aliceblue;
+}
+.custom-navbar-bg {
+    background-color: rgb(7, 7, 83);
+  }
+
+
+  /* Banner */
+.email{
+    max-width: 30px;
+max-height: 35px;}
+
+.card-title{
+    font-size: 50px;
+}
+.card-text{
+    font-size: 45px;
+}
+.text-white{
+    font-size: large;
+    padding: 2%;
+}
+.card-body{
+    padding: 3%; 
+    text-align: left; 
+    margin-top: 4rem; 
+    margin-left: 15%;
+}
+.img-fluid{
+    max-width: 500px;
+    max-height: 500px;
+    object-fit: cover;
+    margin-top: 1rem;
+    margin-left: 40%;
+}
+
+.card{
+    background-color: rgb(11, 46, 116);
+    color: white;
+    padding: 2%;
+    margin-top: 2rem;
+    border-radius:25px;
+}
+
+
+@media (max-width: 576px) {
+    .card-title {
+        font-size: 1.8rem; /* Smaller font for mobile */
+    }
+
+    .card-text {
+        font-size: 1rem; /* Adjusted font size */
+    }
+
+    .text-white {
+        font-size: 0.8rem;
+        padding: 1%;
+    }
+
+    .card-body {
+        padding: 2%;
+        margin-top: 1rem;
+        margin-left: 0;
+        text-align: center; /* Center-align content on mobile */
+    }
+
+    /* Image centered and responsive */
+    .img-fluid {
+        max-width: 100%;
+        object-fit: cover;
+        height: 500px;
+        margin: 1rem auto;
+        margin-left: 15%;
+    }
+}
+
+/* Tablet screens */
+@media (min-width: 577px) and (max-width: 1024px) {
+    .card-title {
+        font-size: 2.2rem; /* Larger than mobile, but smaller than laptop */
+    }
+
+    .card-text {
+        font-size: 2.5rem;
+    }
+
+    .text-white {
+        font-size: 0.8rem;
+        padding: 2%;
+    }
+
+    .card-body {
+        padding: 2%;
+        margin-top: 2rem;
+        margin-left: 5%;
+        text-align: left;
+    }
+
+    /* Center and size image */
+    .img-fluid {
+        max-width: 80%;
+        margin-left: 20%;
+        
+    }
+}
+
+
+/* about me */
+
+.aboutme{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.about{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 40px;
+}
+@media (min-width: 577px) and (max-width: 1024px) {
+    .aboutme {
+        font-size: 2.5rem; /* Larger than mobile, smaller than desktop */
+        margin-top: 3rem;
+    }
+
+    .about {
+        font-size: 0.8rem; /* Slightly larger than mobile */
+        padding: 1.5rem; /* Moderate padding for tablets */
+    }
+}
+
+
+/* qualification */
+
+.quali{
+    background-color: white;
+    border-radius:0%;
+    color: rgb(3, 3, 105);
+    font-size: larger;
+    font-weight: bold;
+}
+
+.quali h1{
+    text-align: center;
+    color: rgb(3, 3, 105);
+}
+
+.quali .btn{
+    background-color: rgb(3, 3, 105);
+    padding: 8%;
+}
+.quali span{
+    color: brown;
+}
+
+/* Certifications */
+
+.certi img{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.certi h1{
+    text-align: center;
+
+}
+
+.certi .col-3{
+    padding-left: 10px;
+    padding-right: 0;
+
+}
+
+.certi .row{
+    justify-content: center;
+    margin-top: 2rem;
+
+}
+
+.certi .last{
+    justify-content: center;
+}
+
+
+/* Mobile (max-width: 576px) */
+@media (max-width: 576px) {
+    .quali h1, .certi h1 {
+        font-size: 1.5rem; /* Smaller heading for mobile */
+    }
+
+    .quali .btn {
+        font-size: 0.875rem; /* Smaller button text */
+        padding: 0.75rem;
+    }
+
+    .certi img {
+        max-width: 100%; /* Full width of column */
+        max-height: 150px; /* Smaller image height */
+    }
+
+    .certi .row {
+        gap: 0.5rem; /* Small gap between rows */
+    }
+}
+
+/* Tablet (min-width: 577px and max-width: 1024px) */
+@media (min-width: 412)and (min-width: 577px) and (max-width: 1024px) {
+    .quali h1, .certi h1 {
+        font-size: 1.75rem; /* Larger than mobile, but smaller than desktop */
+    }
+
+    .quali .btn {
+        font-size: 1rem;
+        padding: 0.875rem;
+    }
+
+    .certi img {
+        max-width: 180px; /* Moderate image size */
+        max-height: 180px;
+    }
+}
+
+
+/* Modal styling */
+.modal-body {
+    padding: 0;
+}
+
+#modalImage {
+    width: 100%; /* Full modal width */
+    object-fit: contain;
+    margin-left: 20%;
+}
+
+@media  (min-width: 412px) and (max-width: 1024px){
+    .modal-body {
+        padding: 10px;
+    }
+    #modalImage {
+        width: 100%; /* Full modal width */
+        object-fit: contain;
+        margin-left: 0%;
+    }
+}
+
+
+
+
+
+/* skills */
+
+.skills{
+    margin-top: 5rem;
+    
+    color: white;
+}
+
+
+
+.skills h1{
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 2rem;
+}
+
+.skills p{
+    font-size: 35px;
+    text-align: left;
+    margin-top: 7rem;
+    
+}
+
+.skills img{
+    max-height: 500px;
+}
+
+
+/* footer */
+footer{
+    background-color: gray;
+}
+.contact{
+    margin-top: 5rem;
+    background-color: gray;
+    color: white;
+    padding: 0.5%;
+    
+}
+
+.contact h1{
+    text-align: center;
+}
+
+.contact .info{
+    padding: 30px;
+    margin-left: 8%;
+}
+
+.contact .call{
+    max-width: 50px;
+max-height: 35px;
+}
+
+.contact .linkedin{
+    max-width: 70px;
+max-height: 35px;}
+
+
+/* Skills section - Mobile and Tablet responsiveness */
+@media (max-width: 991px) {
+    .skills h1 {
+        font-size: 30px; /* Reduce heading size */
+    }
+
+    .skills p {
+        font-size: 18px; /* Reduce paragraph font size */
+        text-align: center;
+        margin-top: 2rem; /* Adjust spacing */
+    }
+
+    .skills img {
+        max-height: 200px; /* Scale down images for smaller screens */
+        width: 100%;
+        margin-bottom: 1rem;
+        object-fit: contain;
+    }
+
+    .skills .col-4,
+    .skills .col-6 {
+        width: 100%; /* Make each column full width */
+        text-align: center; /* Center-align text */
+    }
+
+    .skills .row {
+        margin-bottom: 2rem; /* Add space between rows */
+    }
+}
+
+/* Contact section - Mobile and Tablet responsiveness */
+@media (max-width: 991px) {
+    .contact h1 {
+        font-size: 30px; /* Smaller font for heading */
+        margin-top: 1rem;
+    }
+
+    .contact .info {
+        padding: 20px;
+        margin-left: 0; /* Remove left margin */
+        text-align: center; /* Center-align for mobile */
+    }
+
+    .contact .info a,
+    .contact .info img {
+        display: block; /* Stack icons and text vertically */
+        margin: 0.5rem auto;
+    }
+
+    .contact .call,
+    .contact .linkedin,
+    .contact .email {
+        max-width: 40px;
+        max-height: 30px;
+    }
+
+    .contact .info a {
+        font-size: 16px; /* Adjust font size for smaller screens */
+        color: white;
+    }
+}
